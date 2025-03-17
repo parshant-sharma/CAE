@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import CAE_LOGO from "../images/CAE_LOGO.png";
+import CAE_LOGO from "../images/CAE_logo.png";
 const Header = () => {
   return (
     <div style={{ justifyItems: "center" }}>
