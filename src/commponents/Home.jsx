@@ -64,7 +64,7 @@ const Home = () => {
               solutions for students, educators, and institutions worldwide.
             </p>
 
-            <buton
+            <button
               style={{
                 background: "#000076",
                 color: "white",
@@ -78,7 +78,7 @@ const Home = () => {
               }}
             >
               Get Started
-            </buton>
+            </button>
           </div>
 
           <div>
