@@ -1,16 +1,16 @@
 import React from "react";
-import { Routes , Route } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
 import Home from "../commponents/Home";
-const AppRoute =()=>{
-
-    return(<>
-     <Routes>
-        <Route path="/" element={<Home/>}/>
-        {/* <Route path="*" element={{hllo}}/> */}
-    </Routes>
-    </>);
-   
-
-}
+import NotFoundPage from "../pages/404";
+const AppRoute = () => {
+  return (
+    <>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="*" element={<NotFoundPage />} />
+      </Routes>
+    </>
+  );
+};
 
 export default AppRoute;
