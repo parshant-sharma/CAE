@@ -1,0 +1,28 @@
+[build]
+  # Directory where your build output files are located (usually 'public' for Gatsby, 'build' for React)
+  publish = "public"  # For Gatsby or similar frameworks, it could be 'build' for React
+  # Command to run to build your site (e.g., for Gatsby or React)
+  command = "yarn run build"  # Use 'npm run build' if you're using npm instead of Yarn
+
+  # Directory to run the build from (use the root of the project or specify subdirectory for monorepos)
+  base = "/"  # Leave it as '/' for a root project or specify the subfolder name if using a monorepo
+
+[[redirects]]
+  # Redirect rule example: Redirect HTTP to HTTPS
+  from = "http://*"
+  to = "https://:splat"
+  status = 301
+  force = true
+
+[[plugins]]
+  # Optional: Add any plugins you want to use (e.g., for handling redirects, performance, etc.)
+  package = "@netlify/plugin-nextjs"  # Replace with the plugin you're using, if any
+
+[functions]
+  # Directory where your serverless functions are located (usually 'netlify/functions')
+  directory = "netlify/functions"
+  
+# Optional: Specify environment variables
+[env]
+  NODE_ENV = "production"
+  CUSTOM_ENV_VAR = "value"
