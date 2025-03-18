@@ -12,7 +12,7 @@ const IndexPage = () => {
 
   if (!isBrowser) {
     // Prevent rendering Router during SSR
-    return null;
+    return <h1>hello</h1>;
   }
 
   return (
