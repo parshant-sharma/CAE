@@ -5,11 +5,6 @@ import AppRoute from "../routing/AppRoute";
 const IndexPage = () => {
   const [isBrowser, setIsBrowser] = useState(false);
 
-  useEffect(() => {
-    // This will run only in the browser after the component has mounted
-    setIsBrowser(true);
-  }, []);
-
   if (!isBrowser) {
     // Prevent rendering Router during SSR
     return <h1>hello</h1>;
