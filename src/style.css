@@ -1,0 +1,105 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+
+
+body{
+    font-family: Inter , sans-serif;
+    line-height: 100%;
+}
+
+.Home{
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width:80%;
+}
+.Home_heading{
+    font-weight: 700;
+    font-size: 55px;
+    line-height: 100%;
+    letter-spacing: 0%;
+}
+
+.Home_paragraph{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 100%;
+    letter-spacing: 0%;
+}
+
+.statists_desc{
+    color:#212121;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 180%;
+    letter-spacing: 2%;
+}
+
+.facilites_heading{
+    font-weight: 600;
+    font-size: 22.31px;
+    line-height: 31.2px;
+}
+
+.facilities_desc{
+    margin-top:17px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 19.6px;
+}
+
+
+.slick-slide {
+    padding:0 20px; 
+  }
+
+a{
+    display: block;
+}  
+
+.Footer_heading{
+    font-weight: 700;
+    font-size: 15px;
+    padding-bottom: 20px;
+    color:white;
+}
+
+.Footer_Link{
+    font-size: 12px;
+    font-weight: 400;
+    color:white;
+    line-height: 100%;
+    padding-bottom:10px;
+}
+
+.coreValue_heading{
+    margin-top: 10px;
+    font-weight:500;
+    font-size:24px;
+}
+
+.coreValue_desc{
+    margin-top: 20px;
+    font-weight: 400;
+    font-size:16px;
+    line-height: 28.8px;
+}
+
+
+
+input::placeholder {
+    font-size: 12px;
+    color: #626262;
+  }
+
+
+
+
+  /* @media screen and (max-width: 768px) {
+    .Home {
+      display: grid;
+      grid-template-columns: 1fr; 
+      width: 80%;  
+      gap: 20px;   
+    }
+} */

@@ -1,0 +1,26 @@
+[build]
+  publish = "public"
+  command = "yarn run build"
+  base = "/"
+
+[[redirects]]
+  from = "http://*"
+  to = "https://:splat"
+  status = 301
+  force = true
+
+# Optional: Add more rewrites to prevent missing pages
+[[redirects]]
+  from = "/*"
+  to = "/404.html"
+  status = 200
+  force = true
+
+[[plugins]]
+  package = "@netlify/plugin-gatsby"
+
+[functions]
+  directory = "netlify/functions"
+
+[env]
+  NODE_ENV = "production"
